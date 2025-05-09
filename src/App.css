@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #1e2a38;
+  background-color: #1f2b38;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -194,3 +194,44 @@ main {
   height: 100% !important;
   display: block;
 }
+
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* Простір між елементами */
+  align-items: center; /* Вирівнювання по вертикалі */
+  padding: 0 2rem; /* Відступи по боках */
+  background-color: #1f2b38; /* Темний фон футера */
+  border-top: 1px solid #e0e0e0;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  color: #2c2c2c;
+  margin-top: 3rem;
+  box-shadow: 0 -2px 6px rgba(194, 17, 17, 0.05);
+  height: 70px; /* Фіксована висота футера */
+  overflow: hidden; /* Приховує вміст, що виходить за межі */
+}
+
+.footer p {
+  padding: 1px 1px;
+  text-align: center;
+  color: #c2c2c2; /* Світлий колір для тексту */
+  flex: 2; /* Займає все доступне місце */
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-end; /* Логотип праворуч */
+  max-width: 100%; /* Логотип не може перевищувати ширину контейнера */
+  overflow: hidden; /* Приховує частину зображення, яка виходить за межі */
+}
+
+.footer-logo img {
+  height: 150px; /* Висота лого */
+  width: auto; /* Зберігає пропорції картинки */
+  transition: transform 0.3s ease;
+  padding: 10px;
+  
+}
+
+

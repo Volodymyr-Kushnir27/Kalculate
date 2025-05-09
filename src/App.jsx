@@ -1,5 +1,5 @@
 
-import React from 'react'; 
+import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { Chart, BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController } from 'chart.js';
 import './App.css';
@@ -132,11 +132,14 @@ function App() {
     <>
       <header>
         <div className="logo">
-        <img src={logo} alt="Logo" />
+          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
+            <img src={logo} alt="Logo" />
+          </a>
         </div>
-        <h2>Калькулятор інвестицій</h2>
+        <h2>Калькулятор інвестицій </h2>
         <time><p>{time}</p></time>
       </header>
+
 
       <main>
         <aside className="calculator">
@@ -189,7 +192,8 @@ function App() {
             <button onClick={handleReset}>Скинути</button>
             <button onClick={handleCalculate}>Розрахувати</button>
           </div>
-          <span className='spg'>Дохід розрахований за умови реінвестицій вкладень щомісячно</span>
+          <span className='spg'>Дохід розрахований за умови реінвестицій вкладень щомісячно
+          </span>
         </aside>
 
         <section className="results">
@@ -209,6 +213,14 @@ function App() {
           </figure>
         </section>
       </main>
+      <footer className="footer">
+        <p>Для вас канал <strong>"Фінансовий Старт"</strong></p>
+        <div className="footer-logo">
+          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
+            <img src={logo} alt="Logo" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
