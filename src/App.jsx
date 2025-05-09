@@ -1,3 +1,5 @@
+
+import React from 'react'; 
 import { useState, useEffect, useRef } from 'react';
 import { Chart, BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController } from 'chart.js';
 import './App.css';
