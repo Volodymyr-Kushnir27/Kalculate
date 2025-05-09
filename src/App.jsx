@@ -131,7 +131,7 @@ function App() {
     <>
       <header>
         <div className="logo">
-          <img src="src/assets/logo.png" alt="Logo" />
+          <img src="/assets/logo.png" alt="Logo" />
         </div>
         <h2>Калькулятор інвестицій</h2>
         <time><p>{time}</p></time>
