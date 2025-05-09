@@ -3,7 +3,7 @@ import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { Chart, BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController } from 'chart.js';
 import './App.css';
-
+import logo from '/assets/logo.png';
 
 Chart.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController);
 
@@ -132,7 +132,7 @@ function App() {
     <>
       <header>
         <div className="logo">
-          <img src="public/assets/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
         </div>
         <h2>Калькулятор інвестицій</h2>
         <time><p>{time}</p></time>
