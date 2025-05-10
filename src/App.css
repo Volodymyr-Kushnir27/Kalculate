@@ -198,40 +198,113 @@ main {
 
 .footer {
   display: flex;
-  justify-content: space-between; /* Простір між елементами */
-  align-items: center; /* Вирівнювання по вертикалі */
-  padding: 0 2rem; /* Відступи по боках */
-  background-color: #1f2b38; /* Темний фон футера */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #1f2b38;
   border-top: 1px solid #e0e0e0;
   font-family: 'Playfair Display', serif;
   font-size: 25px;
-  color: #2c2c2c;
+  color: #c2c2c2;
   margin-top: 3rem;
   box-shadow: 0 -2px 6px rgba(194, 17, 17, 0.05);
-  height: 70px; /* Фіксована висота футера */
-  overflow: hidden; /* Приховує вміст, що виходить за межі */
+  height: 100px;
+  overflow: hidden;
 }
 
 .footer p {
-  padding: 1px 1px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
   text-align: center;
-  color: #c2c2c2; /* Світлий колір для тексту */
-  flex: 2; /* Займає все доступне місце */
+  color: #c2c2c2;
 }
 
 .footer-logo {
   display: flex;
-  justify-content: flex-end; /* Логотип праворуч */
-  max-width: 100%; /* Логотип не може перевищувати ширину контейнера */
-  overflow: hidden; /* Приховує частину зображення, яка виходить за межі */
+  align-items: center;
+  gap: 10px; /* Відстань між іконками */
 }
 
 .footer-logo img {
-  height: 150px; /* Висота лого */
-  width: auto; /* Зберігає пропорції картинки */
+  height: 30px;
+  width: auto;
   transition: transform 0.3s ease;
-  padding: 10px;
-  
+  background-color: transparent; /* Забезпечує прозорість */
 }
+
+
+
+@media (max-width: 450px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row; /* тепер йде в ряд */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: auto;
+  }
+
+  header .logo {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* ховає все, що виходить за межі */
+}
+  header .logo img {
+  width: 110%;
+  height: 100%;
+  object-fit: contain; /* масштабування без обрізки */
+  display: block; /* прибирає зайві проміжки під зображенням */
+}
+
+  header h2 {
+    flex: 0 0 75%; /* 75% ширини */
+    font-size: 20px;
+    margin: 0;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  time {
+    display: none; /* ховаємо час, якщо не поміщається */
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+ .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .footer p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-logo {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .footer-logo img {
+    height: 30px;
+  }
+
+  .spg {
+    font-size: 16px;
+  }
+}
+
+
 
 

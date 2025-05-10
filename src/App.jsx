@@ -4,6 +4,9 @@ import { useState, useEffect, useRef } from 'react';
 import { Chart, BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController } from 'chart.js';
 import './App.css';
 import logo from '/assets/logo.png';
+import youtube from '/assets/youTube.png'
+import telegram from '/assets/telegram.png'
+import tiktok from '/assets/TikTok.png'
 
 Chart.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend, BarController);
 
@@ -217,7 +220,13 @@ function App() {
         <p>Для вас канал <strong>"Фінансовий Старт"</strong></p>
         <div className="footer-logo">
           <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
-            <img src={logo} alt="Logo" />
+            <img src={youtube} alt="Logo" />
+          </a>
+          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
+            <img src={telegram} alt="Logo" />
+          </a>
+          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
+            <img src={tiktok} alt="Logo" />
           </a>
         </div>
       </footer>
