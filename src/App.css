@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #1f2b38;
+  background-color: #051516 ;
   color: #fff;
   padding: 1rem 2rem;
   display: flex;
@@ -17,11 +17,16 @@ header {
   height: 80px; 
 }
 
-header .logo img {
-  height: 200px;
-  object-fit: contain;
-  padding-top: 20px;
+.logo img {
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+  display: block;
+  border-radius: 80%;
 }
+
+
 
 header h2 {
   margin: 0;
@@ -32,6 +37,7 @@ header time p {
   margin: 0;
   font-size: 1rem;
   font-weight: bold;
+  color: #29ea26 ;
 }
 
 /* Основний контейнер */
@@ -201,7 +207,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background-color: #1f2b38;
+  background-color: #051516 ;
   border-top: 1px solid #e0e0e0;
   font-family: 'Playfair Display', serif;
   font-size: 25px;
@@ -251,17 +257,18 @@ main {
     height: auto;
   }
 
-  header .logo {
-  width: 100%;
-  height: auto;
-  overflow: hidden; /* ховає все, що виходить за межі */
-}
+    header .logo {
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+  }
+
   header .logo img {
-  width: 110%;
-  height: 100%;
-  object-fit: contain; /* масштабування без обрізки */
-  display: block; /* прибирає зайві проміжки під зображенням */
-}
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
 
   header h2 {
     flex: 0 0 75%; /* 75% ширини */

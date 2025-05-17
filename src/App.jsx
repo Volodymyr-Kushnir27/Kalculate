@@ -208,7 +208,7 @@ function App() {
             </div>
             <div className="box">
               <h2>${totalInterest.toFixed(2)}</h2>
-              <p>Дохід вкладника</p>
+              <p>Прибуток від інвестицій </p>
             </div>
           </div>
           <figure className="chart">
@@ -222,12 +222,10 @@ function App() {
           <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
             <img src={youtube} alt="Logo" />
           </a>
-          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
-            <img src={telegram} alt="Logo" />
+          <a href="https://t.me/Finstart2025" target="_blank" rel="noopener noreferrer">
+            <img src={telegram} alt="Telegram Logo" />
           </a>
-          <a href="https://www.youtube.com/@FinStarts" target="_blank" rel="noopener noreferrer">
-            <img src={tiktok} alt="Logo" />
-          </a>
+
         </div>
       </footer>
     </>
