@@ -23,7 +23,7 @@ Chart.register(
 // public/assets/logo.png => /assets/logo.png
 const ASSET_BASE = `${import.meta.env.BASE_URL}assets/`;
 
-const logo = `${ASSET_BASE}Log1.png`;
+const logo = `${ASSET_BASE}logo.png`;
 const youtube = `${ASSET_BASE}youTube.png`;
 const telegram = `${ASSET_BASE}telegram.png`;
 
